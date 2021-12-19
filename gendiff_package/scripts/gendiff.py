@@ -6,7 +6,7 @@ def main():
     parser.add_argument('first_file', type=str)
     parser.add_argument('second_file', type=str)
     parser.add_argument('-f', '--format', default='stylish',
-                        help='output format (default: "stylish")')
+                        help='set format of output (default: plain)')
     args = parser.parse_args()
     return args.first_file, args.second_file, args.format
 
