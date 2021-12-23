@@ -14,5 +14,4 @@ package-reinstall:
 	py -3 -m pip install --user dist/*.whl --force-reinstall
 	
 lint:
-	poetry run flake8 gendiff_package
-	
+	poetry run flake8 gendiff
