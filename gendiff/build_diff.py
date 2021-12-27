@@ -18,12 +18,12 @@ def generate_diff(file1, file2):
         diff.append(' - ' + key + ': ' + str(before_dict[key]))
     for key in common:
         if before_dict[key] == after_dict[key]:
-            diff.append('   ' + key + str(before_dict[key]))
+            diff.append('   ' + key + ': ' + str(before_dict[key]))
         else:
             diff.append(' - ' + key + ': ' + str(before_dict[key]))
             diff.append(' + ' + key + ': ' + str(after_dict[key]))
     for key in after:
-        diff.append(' + ' + key + ' ' + str(after_dict[key]))
+        diff.append(' + ' + key + ': ' + str(after_dict[key]))
     diff.append('}')
     result_diff = ''
     for elem in diff:

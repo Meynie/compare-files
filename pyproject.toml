@@ -4,18 +4,21 @@ version = "0.1.0"
 description = ""
 authors = ["Olga <ol.nevskaya@mail.ru>"]
 packages = [
-  { include = "gendiff_package" },
+  { include = "gendiff" },
 ]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 flake8 = "^4.0.1"
 argparse = "^1.4.0"
+pytest = "^6.2.5"
+PyYAML = "^6.0"
+pytest-cov = "^3.0.0"
 
 [tool.poetry.dev-dependencies]
 
 [tool.poetry.scripts]
-gendiff = "gendiff_package.scripts.gendiff:main"
+gendiff = "gendiff.scripts.gendiff:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
