@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+"""JSON files diff test."""
+
 from gendiff.build_diff import generate_diff
 from tests.expected import DIFFERENCE_STRING
 
