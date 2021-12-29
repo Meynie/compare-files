@@ -9,7 +9,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
-flake8 = "^4.0.1"
+flake8 = "^3.8.3"
 argparse = "^1.4.0"
 pytest = "^6.2.5"
 PyYAML = "^6.0"
