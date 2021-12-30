@@ -50,7 +50,7 @@ def _render_array(elements, depth):
     res = ['{']
     for prop_name, prop_value in elements.items():
         res.extend([
-            f'{INDENT * (depth + 3)}{prop_name}: {prop_value}',
+            f'{INDENT * (depth + 3)}\'{prop_name}\': \'{prop_value}\'',
             f'{INDENT * (depth + 1)}}}',
         ])
-    return ''.join(res)
+    return '\n'.join(res)
