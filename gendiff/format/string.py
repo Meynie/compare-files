@@ -25,8 +25,8 @@ def render(ast, depth=1):
             ])
         elif item_type == CHANGED:
             diff.extend([
-                f'{indent}{ADDED} {node_key}: {node_value.get("new_value")}',
                 f'{indent}{DELETED} {node_key}: {node_value.get("old_value")}',
+                f'{indent}{ADDED} {node_key}: {node_value.get("new_value")}',
             ])
         else:
             diff.append('{indent}{state} {key}: {value}'.format(
