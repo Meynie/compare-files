@@ -1,9 +1,9 @@
-name: linter-check
+name: Python build
 
 on: push
 
 jobs:
-  build:
+  Python build:
   
     runs-on: ubuntu-lates
     strategy:
@@ -12,6 +12,12 @@ jobs:
         python-version: [3.8, 3.9]
 
     steps:
+    - uses: actions/checkout@v2
+    # Set up Python
+    - name: Set up Python ${{ matrix.python-version}}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
     # make depends on poetry
     - name: Install dependencies
       run: |
