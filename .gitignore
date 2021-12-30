@@ -1,3 +1,18 @@
+### Default ignored files
+
+# Environments
 .venv/
+
+# Distribution / packaging
 dist/
+
+# Python template
 __pycache__
+
+# Unit test / coverage reports
+.coverage
+.coverage.*
+coverage.xml
+
+# User-specific stuff
+.idea/
