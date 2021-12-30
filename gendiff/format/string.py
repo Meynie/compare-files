@@ -53,4 +53,4 @@ def _render_array(elements, depth):
             f'{INDENT * (depth + 3)}{prop_name}: {prop_value}',
             f'{INDENT * (depth + 1)}}}',
         ])
-    return '\n'.join(res)
+    return ''.join(res)
