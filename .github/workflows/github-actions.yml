@@ -3,11 +3,10 @@ name: Python build
 on: push
 
 jobs:
-  Python build:
+  build:
   
     runs-on: ubuntu-lates
     strategy:
-      fail-fast: false
       matrix:
         python-version: [3.8, 3.9]
 
